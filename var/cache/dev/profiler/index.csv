@@ -1,0 +1,9 @@
+8939c7,172.18.0.1,GET,http://foxnot.ttdev/,1516959333,,200
+95fea8,172.18.0.1,GET,http://foxnot.ttdev/favicon.ico,1516959333,4244d3,200
+4244d3,172.18.0.1,GET,http://foxnot.ttdev/favicon.ico,1516959333,,404
+b2c2db,172.18.0.1,GET,http://foxnot.ttdev/graphql,1516959339,,301
+264cea,172.18.0.1,GET,http://foxnot.ttdev/graphql/,1516959339,a81ef8,200
+a81ef8,172.18.0.1,GET,http://foxnot.ttdev/graphql/,1516959339,,500
+2c34ca,172.18.0.1,GET,http://foxnot.ttdev/graphiql/,1516959345,ed9095,200
+ed9095,172.18.0.1,GET,http://foxnot.ttdev/graphiql/,1516959345,,404
+de7309,172.18.0.1,GET,http://foxnot.ttdev/,1516961569,,200

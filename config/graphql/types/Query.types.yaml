@@ -1,0 +1,19 @@
+Query:
+  type: object
+  config:
+    description: "Products ORM repository"
+    fields:
+      product:
+        type: "Product"
+        args:
+            id:
+              description: "Resolves using the product id."
+              type: "Int"
+        resolve: "@=resolver('Product', [args])"
+      product_list:
+        type: "ProductList"
+        args:
+          limit:
+            description: "limit"
+            type: "Int"
+        resolve: "@=resolver('ProductList', [args])"

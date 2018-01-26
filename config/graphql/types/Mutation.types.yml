@@ -1,0 +1,15 @@
+#Mutation:
+# type: object
+# config:
+#   description: "All Star Wars mutations"
+#   fields:
+#     createReview:
+#       args:
+#         episode:
+#           type: "String!"
+#         content:
+#           type: "String!"
+#         rating:
+#           type: "Int!"
+#       type: Episode
+#       resolve: "@=mutation('reviewEpisode', [args['episode'], ...])"

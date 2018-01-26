@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+ {% block body %}
+<table>
+    <tr>
+        <td>ID</td>
+        <td>NAME</td>
+        <td>PRICE</td>
+        <td>DESCRIPTION</td>
+    </tr>
+    {% for i in 1..10 %}
+    <tr>
+        <td>{{ product[i].id}}</td>
+        <td>{{ product[i].name }}</td>
+        <td>{{ product[i].price }}</td>
+        <td>{{ product[i].description }}</td>
+    </tr>
+    {% endfor %}
+</table>
+ {% endblock %}

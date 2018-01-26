@@ -1,0 +1,17 @@
+Product:
+    type: object
+    config:
+        description: "A shop"
+        fields:
+            id:
+               type: "Int!"
+               description: "The unique ID of the product"
+            name:
+               type: "String"
+               description: "Name of the apartment"
+            price:
+               type: "String"
+               description: "Price of the Apartment"
+            description:
+               type: "String"
+               description: "description of the Apartment"
