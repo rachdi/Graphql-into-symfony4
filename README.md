@@ -1,5 +1,6 @@
 # GraphQL 
-  **les architectures REST ne sont pour autant pas parfaitement adaptées à tous les usages et ne peuvent pas facilement répondre à toutes les problématiques car :
+
+  ## les architectures REST ne sont pour autant pas parfaitement adaptées à tous les usages et ne peuvent pas facilement répondre à toutes les problématiques car :
   
 1. REST est tout ou rien, si vous requêtez un objet vous aurez spontanément tous les champs de l'objet ou rien.
 
@@ -13,14 +14,14 @@
 
 6. REST n'est d'aucune aide pour vous garantir le type des données échangées.
 
-## qu'est-ce que GraphQL ?
+  ## qu'est-ce que GraphQL ?
 
 * Créé par Facebook en 2012 qui avait commencé à l’utiliser pour ses propres besoins,  les sources de ce projet en été libéré en 2015. 
 * GraphQL est avant tout un langage d'interrogation comme le SQL, où le format de la requête est le même que celui de la réponse. 
 ![Exemple d'une requete 
 ](https://screenshots.firefox.com/BslvE5Nbvht8BJyi/yedsdg.ttdev)
-
-## Graphql for backend developer
+ 
+ ## Graphql for backend developer
 
 	" Pour utiliser GraphQl il faut  définir le modèle de donnés ,"
 * Le schéma avec les objets et les types de champs,
@@ -42,13 +43,11 @@
 > **GraphQL est capable de requêter un nombre inconnu d’éléments et d’y**
 > **appliquer des conditions et filtres**
 >
-
-
-## Est ce qu'il repond a notre besoin 
+  ## Est ce qu'il repond a notre besoin 
 GraphQL utilise l’introspection, ce qui facilite la génération de la documentation et l’autocomplétion. 
 	
 
->  **DES TYPES PERSONNALISÉS** 
+  >  **DES TYPES PERSONNALISÉS** 
 
 Un bundle symfony permet implémentation facile des images et des fichiers dans une API GraphQL (le paquet avec l'implémentation de GraphQL et sa documentation est ici)
 ID [GraphQLFilesBundle](https://github.com/Youshido/GraphQLFilesBundle)
@@ -64,18 +63,18 @@ Liste des Types mise a disposition
  - LIST [GraphQLList](http://graphql.org/graphql-js/type/#graphqllist)
 
 
-## Query
+  ## Query
 
 Une Query est le type de requête possible pour la lecture. On définit le schéma côté API et le client pourra récupérer les champs qui lui sont nécessaires parmis ceux rendus disponibles dans le schéma.
 On peut définir des paramètres pour la méthode :
 Ex: Filtres, limites, ...
 
-## Mutation
+  ## Mutation
 
 Une Mutation est le type de requête pour l'écriture. De la même façon, on va définir la liste des mutations disponibles avec les type d'objet en `Input`, les données demandées au client. Pour la réponse, on définit un type d'objet `Payload` qui s'utilise de la même façon qu'une Query. 
 Ceci permet de faire une requête d'écriture et de demander les données que l'on souhaite en retour dans le Payload.
 
-## Upload de Fichiers
+  ## Upload de Fichiers
 
 L'upload de fichier fonctionne simplement via les requêtes `multipart/form-data`. On récupère le fichier via l'objet `Request`. 
 Côté front, des libs existent aussi bien pour Apollo et Relay.
@@ -85,7 +84,7 @@ Côté front, des libs existent aussi bien pour Apollo et Relay.
 
 L'authentification fonctionne tout comme avec une API REST. Nous avons fait la demo avec les tokens JWT. Donc on ajoute le header `Authorization: Bearer XXXX`.
 
-## Spécifications Relay
+  ## Spécifications Relay
 
 Le Bundle et la lib n'obligent en rien à suivre les spécifications Relay. Or, ce sont celles-ci qui sont suivies par les libs front-end (Relay et Apollo). 
 
@@ -95,7 +94,7 @@ Le Bundle et la lib n'obligent en rien à suivre les spécifications Relay. Or, 
 
 [Doc](https://facebook.github.io/relay/graphql/connections.htm)
 
-## Simplifier la mise en place d'une API GraphQL/REST
+  ## Simplifier la mise en place d'une API GraphQL/REST
 
 [Api-Platform](https://api-platform.com) - La version 2.2 propose une API GraphQL simplement en ajoutant la [lib GraphQL](https://github.com/webonyx/graphql-php).
 Fonctionnaltiés :
