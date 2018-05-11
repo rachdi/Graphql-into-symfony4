@@ -53,7 +53,7 @@ GraphQL utilise l’introspection, ce qui facilite la génération de la documen
 Un bundle symfony permet implémentation facile des images et des fichiers dans une API GraphQL (le paquet avec l'implémentation de GraphQL et sa documentation est ici)
 ID [GraphQLFilesBundle](https://github.com/Youshido/GraphQLFilesBundle)
 
-GraphQL met à disposition l’objet GraphQLScalarType qui permet de créer des types plus complexes et personnalisés que ceux proposés par défaut pour notre projet Foxnot .
+GraphQL met à disposition l’objet GraphQLScalarType qui permet de créer des types plus complexes et personnalisés que ceux proposés par défaut dans un projet quelquonque.
 Liste des Types mise a disposition 
 
  - ID [GraphQLID](http://graphql.org/graphql-js/type/#graphqlid)
@@ -112,7 +112,7 @@ Plus d'information sur [le blog de Les-tilleuls.coop](https://les-tilleuls.coop/
  
 
 ## Conclusion
-L’implémentation de GraphQL Dans notre projet Foxnot est simple à prendre en main et les performances du langage permettent de construire une API performante.
+L’implémentation de GraphQL Dans un projet est simple à prendre en main et les performances du langage permettent de construire une API performante.
 
 ## Ressources
  - https://symfony.fi/entry/adding-a-graphql-api-to-your-symfony-flex-app
